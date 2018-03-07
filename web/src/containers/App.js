@@ -43,10 +43,10 @@ class App extends Component {
       }) || [];
 
     return (
-      <div>
+      <React.Fragment>
         <Submit onSubmit={this.handleTaskAdd.bind(this)} />
         <ul>{isFetching ? <p>LOADING...</p> : taskViews}</ul>
-      </div>
+      </React.Fragment>
     );
   }
 }
